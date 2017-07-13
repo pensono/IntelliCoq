@@ -1,0 +1,32 @@
+<idea-plugin version="2">
+  <id>org.intellicoq</id>
+  <name>IntelliCoq</name>
+  <version>0.1</version>
+  <vendor email="ethan.shea1@gmail.com" url="http://ethan-shea.com">Ethan Shea</vendor>
+
+  <description><![CDATA[
+      An IntelliJ plugin for the Coq proof assistant.<br>
+
+      Rooster Icon by corpus delicti from the Noun Project.
+    ]]></description>
+
+  <change-notes><![CDATA[
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileTypeFactory implementation="org.intellicoq.CoqFileTypeFactory"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
